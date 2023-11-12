@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const variants = {
   initial: {
@@ -31,14 +31,14 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_gn06rzs",
+        "template_8jawir8",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "INCLqUpl5IB2WlSKN"
       )
       .then(
         (result) => {
-          setSuccess(true);
+          setSuccess(true)
         },
         (error) => {
           setError(true);
@@ -60,6 +60,7 @@ const Contact = () => {
           <h2>Email</h2>
           <span>suwanthadarshana@gmail.com</span>
         </motion.div>
+        
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
           <span>+94 71 399 6535</span>
@@ -68,9 +69,9 @@ const Contact = () => {
       <div className="formContainer">
         <motion.div
           className="phoneSvg"
-          initial={{ opacity: 1 }} 
+          initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: 1, duration: 1 }}
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
@@ -100,11 +101,11 @@ const Contact = () => {
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 2, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="email" required placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Message" name="message" />
+          <input type="text" required placeholder="Name" name="name"/>
+          <input type="email" required placeholder="Email" name="email"/>
+          <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
           {error && "Error"}
           {success && "Success"}

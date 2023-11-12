@@ -30,9 +30,9 @@ const Services = () => {
       variants={variants}
       initial="initial"
       // animate="animate"
-    //   whileInView="animate" 
+      //   whileInView="animate"
       ref={ref}
-      animate={isInView && "animate"}
+      animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
@@ -62,14 +62,12 @@ const Services = () => {
           whileHover={{ background: "lightgray", color: "black" }}
         >
           <h2>CV Creation</h2>
-          <br /> 
           <p>
             Crafting standout CVs for a compelling narrative. As a web
             developer, I blend creativity and precision to showcase
             qualifications and tell a captivating story. Unlock opportunities
             with a personalized CV that resonates.
           </p>
-          <br />
           <button>Go</button>
         </motion.div>
         <motion.div
@@ -77,6 +75,7 @@ const Services = () => {
           whileHover={{ background: "lightgray", color: "black" }}
         >
           <h2>Portfolio Design</h2>
+
           <p>
             Elevate your online presence with my Portfolio Design. As a web
             developer, I craft compelling showcases that tell your unique story,
