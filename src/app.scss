@@ -4,11 +4,10 @@ html {
 }
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  // font-family: 'Josefin Slab',sans-serif ;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
@@ -18,12 +17,14 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; //take color from parent => body
+  color: inherit;
 }
 
 section {
   height: 100vh;
+  width: 100vw;
   scroll-snap-align: center;
+  overflow: hidden;
 }
 
 @mixin mobile {
@@ -31,13 +32,11 @@ section {
     @content;
   }
 }
-
 @mixin tablet {
   @media (max-width: 1024px) {
     @content;
   }
 }
-
 @mixin desktop {
   @media (max-width: 1366px) {
     @content;

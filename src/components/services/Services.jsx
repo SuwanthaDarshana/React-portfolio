@@ -30,7 +30,7 @@ const Services = () => {
       variants={variants}
       initial="initial"
       // animate="animate"
-      //   whileInView="animate"
+      // whileInView="animate"
       ref={ref}
       animate={"animate"}
     >
@@ -68,34 +68,32 @@ const Services = () => {
             qualifications and tell a captivating story. Unlock opportunities
             with a personalized CV that resonates.
           </p>
-          <button>Go</button>
+          
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
           <h2>Portfolio Design</h2>
-
           <p>
             Elevate your online presence with my Portfolio Design. As a web
             developer, I craft compelling showcases that tell your unique story,
             leaving a lasting impact. Unlock the full potential of your work
             with a standout visual narrative.
           </p>
-          <button>Go</button>
+          
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Web application development</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            I craft user-friendly, scalable web applications using HTML5, CSS3,
+            JavaScript, React, Angular, and Node.js. My dynamic, interactive web
+            solutions align perfectly with your specific business needs.
           </p>
-          <button>Go</button>
+          
         </motion.div>
       </motion.div>
     </motion.div>
