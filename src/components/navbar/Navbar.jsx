@@ -13,19 +13,17 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Suwantha 
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/linkedin.png" alt="" />
+          <a href="https://www.linkedin.com/in/suwantha-darshana-3b9856219/">
+            <img src="/linkedin.png" alt="likedin image" />
           </a>
-          <a href="#">
-            <img src="/github.png" alt="" />
+          <a href="https://github.com/SuwanthaDarshana">
+            <img src="/github.png" alt="github image" />
           </a>
-          <a href="#">
-            <img src="/twitter.png" alt="" />
+          <a href="https://twitter.com/Suwa9_9">
+            <img src="/twitter.png" alt="twitter image" />
           </a>
-          
         </div>
       </div>
     </div>
